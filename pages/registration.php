@@ -1,34 +1,3 @@
-<?php
-// include "../pages/conn.php";
-
-
-// $nume = $_POST['nume'];
-// $prenume = $_POST['prenume'];
-// $email = $_POST['email'];
-// $password = $_POST['password'];
-//  $password = md5($password);
-// $confirmpassword = $_POST['confirmpassword'];
-
-// // echo $name;
-// $sql = "INSERT INTO user (`nume`, `prenume`, `rg_email`, `rg_password`)
-// VALUES (?, ?, ?, ?)";
-
-// // Se pregătește declarația și se verifică dacă există erori
-// $stmt = $conn->prepare($sql);
-// if (!$stmt) {
-//  echo'Error: ' . $conn->error;
-// } else {
-//   // Se leagă parametrii și se execută declarația
-//   $stmt->bind_param("ssss", $nume, $prenume, $email, $password);
-//   if ($stmt->execute()) {
-//     echo 'Datele au fost adăugate';
-//   } else {
-//     echo 'Error: ' . $stmt->error;
-//   }
-// }
-//   // Se închide declarația
-//   $stmt->close();
-// ?>
 
 
 
@@ -46,7 +15,7 @@
   <link rel="icon" href="../assets/logo.png" />
 
   <link rel="stylesheet" href="../styles/main.css" />
-  <!-- <link rel="stylesheet" href="../styles/home.css" /> -->
+
   <link rel="stylesheet" href="../styles/registration.css" />
 
   <title>Ally</title>
@@ -59,7 +28,7 @@
         <img class="logo" src="../assets/logo.png" alt="logo" />
       </a>
       <div class="menu-icon-container">
-        <!--- Iconita de meniu + checkbox-ul sunt pentru mobile. -->
+        
   <span class="material-icons menu-icon"> menu </span>
   <input type="checkbox" />
   <ul>
@@ -72,12 +41,12 @@
     <li class="about-us">
       <a href="../pages/about.html">
         Despre Noi
-        <!-- Iconita luata de pe Material Icons. -->
+     
         <span class="material-icons arrow-down-icon">
           arrow_drop_down
         </span>
       </a>
-      <!-- Submeniul afisat la hover pe "Despre noi" -->
+   
       <div class="submenu">
         <a href="../index.html">Flori</a>
         <a href="../pages/about.html">Despre Noi</a>
