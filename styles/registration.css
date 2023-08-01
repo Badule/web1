@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-color: #23252a; */
+  /* background-color: #edf0f1; */
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin:5rem 0;
+}
+
+.form{
+
+margin: auto 10%;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+h3{
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-gr{
+  display:flex;
+  justify-content: space-between;
+}
+
+ 

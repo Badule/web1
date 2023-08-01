@@ -1,0 +1,59 @@
+/* css for home page */
+
+#intro {
+  background-color: white;
+}
+
+
+.img-fluid {
+  height: auto;
+  width: 400px;
+  margin-top: 150px;
+}
+.flori {
+  height: auto;
+  width: 100%;
+}
+.color {
+  color: rgb(217, 7, 7);
+}
+/* .btn {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+.buchete-flori-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.buchete-flori {
+  flex: 0 1 calc(33% - 20px);
+}
+
+.buchete-flori.ending {
+  height: 4px;
+  width: 100%;
+  /* background-color: var(--button-color); */
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+@media (max-width: 992px) {
+  .buchete-flori {
+    flex: 0 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .buchete-flori {
+    flex: 0 1 100%;
+  }
+}

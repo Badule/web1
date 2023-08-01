@@ -1,0 +1,106 @@
+
+.spa{
+  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-left: 350px;
+  font-size: 20px;
+  color: rgb(16, 122, 16);
+
+}
+
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+
+
+span {
+  display: inline-block;
+  text-shadow: 0 0 0 rgb(212, 34, 170);
+  animation: smoky 5s 3s both;
+}
+
+span:nth-child(even){
+  animation-name: smoky-mirror;
+}
+
+@keyframes smoky {
+  60% {
+    text-shadow: 0 0 40px rgb(230, 18, 208);
+  }
+  to {
+    transform:
+      translate3d(15rem,-8rem,0)
+      rotate(-40deg)
+      skewX(70deg)
+      scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+@keyframes smoky-mirror {
+  60% {
+    text-shadow: 0 0 40px whitesmoke; }
+  to {
+    transform:
+      translate3d(18rem,-8rem,0)
+      rotate(-40deg) 
+      skewX(-70deg)
+      scale(2);
+     text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+
+/* @for $item from 1 through 21 {
+  span:nth-of-type(#{$item}){ 
+    animation-delay: #{(3 + ($item/10))}s; 
+  }
+}  */
+
+.pot{
+  padding: 0px 70px;
+}
+
+.fll{
+  padding: 0 100px;
+  /* box-shadow: 3px 3px rgb(241, 217, 217), -1em 0 .4em  rgb(16, 122, 16);
+   */
+}
+
+
+.flori{
+     margin-top: 100px;
+    
+}
+.fl{
+   
+   width: auto;
+   height: 60px;
+   font-size: 15px;
+   
+ 
+}
+.onn{
+    margin-top: 50px;
+    padding: 30px 20px;
+   display: flex;
+
+}
+
+@media (max-width: 992px) {
+  nav {
+    flex: 0 1 100%
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    flex: 0 1 100%;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    flex: 0 1 100%;
+  }
+}

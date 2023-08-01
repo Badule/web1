@@ -1,0 +1,116 @@
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+.contact {
+  margin-top: 140px;
+
+  
+}
+.pcontact {
+  border: 1px solid black;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 3em 0;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+h3 {
+ 
+  background: -webkit-linear-gradient(rgb(8, 88, 86), rgb(211, 243, 244));
+  width: 400px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 5px;
+  cursor: pointer;
+margin-left: 430px;
+   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   border-radius: 3em 0;
+}
+h3:hover {
+  color: white;
+  text-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.separator {
+  height: 2px;
+  width: 400px;
+  /* background-color: black; */
+  
+}
+.separator:hover {
+  background-color:#009688;
+}
+.insta ul li{
+  display: inline-block;
+  padding: 0px 25px;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%; */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 50px;
+  margin-top: 20px;
+ 
+
+} 
+.insta ul li :hover{
+ color: #009688;
+}
+.comm{
+ margin-top: 240px;
+}
+
+.comm::after {
+  content: "";
+  height: 5px;
+  width: 0%;
+  /* trebuie sa se agate de un parinte/trebuie sa aiba position relative */
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.19s;
+}
+.comm:hover::after {
+  width: 100%;
+}
+.partners-wrapper {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 50px;
+}
+.partner {
+  flex: 0 1 100px; /* nu cresti mai mult 100px flex shrink 1 dar poti sa scazi cand numai ai loc */
+  height: auto;
+  margin-right: var(--spacing-xl);
+  margin-left: var(--spacing-xl);
+  margin-bottom: var(--spacing-medium);
+}
+.partner img {
+  filter: grayscale(100%);
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.partner img:hover {
+  filter: grayscale(0);
+}
+.bi {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media  (max-width: 600px) {
+ .container {
+    display:block;
+    
+  }
+  h3{
+    display: none;
+  }
+}

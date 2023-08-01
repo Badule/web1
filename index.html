@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+<!--favicon-->
+    <link rel="icon" href="./assets/logo.png" />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+
+    <title>Ally</title>
+  </head>
+  <body>
+    <nav>
+      <div class="custom-container">
+      
+        <a href="index.html" class="logo-link">
+          <img class="logo" src="assets/logo.png" alt="logo" />
+        </a>
+        <div class="menu-icon-container">
+          <!-- Iconita de meniu + checkbox-ul sunt pentru mobile. -->
+          <span class="material-icons menu-icon"> menu </span>
+          <input type="checkbox" />
+          <ul>
+            <li>
+              <a href="pages/flori.html"> Buchete de flori </a>
+            </li>
+            <li>
+              <a href="pages/registration.php"> Creare Cont </a>
+            </li>
+            <li class="about-us">
+              <a href="pages/about.html">
+                Despre Noi
+                <!-- Iconita luata de pe Material Icons. -->
+                <span class="material-icons arrow-down-icon">
+                  arrow_drop_down
+                </span>
+              </a>
+              <!-- Submeniul afisat la hover pe "Despre noi" -->
+              <div class="submenu">
+                <a href="index.html">Flori</a>
+                <a href="pages/about.html">Despre Noi</a>
+              </div>
+            </li>
+            <li>
+              <a href="pages/contact.html"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <section id="intro" class="mb-5">
+        <div
+          class="container-lg vh-100 d-flex justify-content-center align-items-center"
+        >
+          <div class="row justify-content-between align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+              <h1>
+                <div class="display-2 ">Floraria Ally</div>
+                <div class="divider"></div>
+                
+                
+                </h1>
+                <p class="lead -my-4 ">De-a lungul timpului, florile au reușit să transmită mesaje
+                   printr-un limbaj propriu, să scrie pagini de istorie și să uimească prin estetica și 
+                   funcționalitatea lor. Este imposibil să discutăm despre complexitatea tuturor florilor
+                    într-un singur articol, însă ceea ce putem face este să îți prezentăm câteva dintre cele
+                     mai interesante curiozități despre flori.
+
+                </p>
+
+                <a href="./pages/about.html" class="btn rounded-pill px-5">
+                De ce sa ne alegi ?</a>
+            </div>
+            <div class="col-md-6 text-center d-none d-md-block">
+              <img class="img-fluid" 
+              src="./assets/buchet-de-flori-cu-trandafiri-si-floarea-soarelui.jpg" alt="hero-img" >
+            </div>
+          </div>
+        </div>
+        
+    </section>
+    <section id="buchete-flori mt-5 mb-5">
+        <div
+          class="custom-container courses-calendar-header text-start text-md-center"
+        >
+          <h4 class="display-4 ">Buchete de flori</h4>
+          <div class="divider"></div>
+          <p class="text-muted">
+           Transforma fiecare zi intr-o ocazie speciala, oferind buchete de flori spectaculoase. 
+           Colectia noastra iti ofera buchete de flori diverse, pe care ti le trimitem prin serviciul prompt de livrare flori.<br>
+           <p class="color">Descopera selectia de buchete de flori si alege-ti favoritele!</p>
+          </p>
+        </div>
+
+        <div class="custom-container buchete-flori-wrapper">
+          <article class="buchete-flori p-2">
+            <img  class="flori"src="./assets/buchet-de-trandafiri-pink-day.jpg" alt="flori">
+            <h3 class="mb-4 text-center">Buchet de Trandafiri Pink day</h3>
+            <div class="details mb-4">
+            <button type="button" class="btn btn-light">Adauga</button>
+            <button type="button" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg></button>
+              
+            </div>
+            <div class="ending mt-4"></div>
+          </article>
+
+          <article class="buchete-flori p-2">
+            <img  class="flori"src="./assets/2.jpg" alt="flori">
+            <h3 class="mb-4 text-center">Buchet de Trandafiri Mini Rosa</h3>
+            <div class="details mb-4">
+        <button type="button" class="btn btn-light">Adauga</button>
+            <button type="button" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg></button>
+            </div>
+            <div class="ending mt-4"></div>
+          </article>
+
+          <article class="buchete-flori p-2">
+             <img  class="flori"src="./assets/3.jpg" alt="flori">
+            <h3 class="mb-4 text-center">Buchet de Flori Delphinium Garden</h3>
+            <div class="details mb-4">
+              
+              <button type="button" class="btn btn-light">Adauga</button>
+            <button type="button" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg></button>
+            </div>
+            <div class="ending mt-4"></div>
+          </article>
+
+          <article class="buchete-flori p-2">
+            <img  class="flori"src="./assets/4.jpg" alt="flori">
+            <h3 class="mb-4 text-center">Buchet de flori Lisianthus si Hortensie alba</h3>
+            <div class="details mb-4">
+              <button type="button" class="btn btn-light">Adauga</button>
+            <button type="button" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg></button>
+            </div>
+            <div class="ending mt-4"></div>
+          </article>
+
+          <article class="buchete-flori p-2">
+            <img  class="flori"src="./assets/5.jpg" alt="flori">
+            <h3 class="mb-4 text-center">Buchet de Flori Bezons</h3>
+            <div class="details mb-4">
+             <button type="button" class="btn btn-light">Adauga</button>
+            <button type="button" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg></button>
+            </div>
+            <div class="ending mt-4"></div>
+          </article>
+
+          <article class="buchete-flori p-2">
+            <img  class="flori"src="./assets/6.jpg" alt="flori">
+            <h3 class="mb-4 text-center ">Buchet de Trandafiri albi si Roz</h3>
+            <div class="details mb-4">
+            <button type="button" class="btn btn-light">Adauga</button>
+            <button type="button" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg></button>
+            </div>
+            <div class="ending mt-4"></div>
+          </article>
+        </div>
+    </section>
+
+
+    <footer>
+      <div class="custom-container">
+        <p>
+          <img class="logo1" src="./assets/logo.png" alt="logo">
+          
+          © 2023. Toate drepturile rezervate.</p>
+      </div>
+    </footer>
+<script>
+  let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
