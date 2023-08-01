@@ -1,14 +1,5 @@
 <?php
-// $nume = $_POST['nume'];
-// $prenume = $_POST['prenume'];
-// $email = $_POST['email'];
-// $password = $_POST['password'];
-//  $password = md5($password);
-// $confirmpassword = $_POST['confirmpassword'];
-// // echo $nume;
-// echo $prenume;
-// echo $email;
-// echo $password;
+
 
 if (
     isset($_POST['nume']) &&
@@ -24,11 +15,10 @@ if (
     $prenume = $_POST['prenume'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    // $password = md5($password);
     $confirmpassword = $_POST['confirmpassword'];
 
     $data = "name=" . $nume . "&prenume=" . $prenume . "&email=" . $email;
-    // echo $email;
+  
     if (empty($nume)) {
         $em = "First name is required";
         header("Location:./registration.php?error=$em&$data");
@@ -74,7 +64,4 @@ if (
     exit;
 }
 
-// $nume=$_POST['nume'];
-
-// echo $nume;
 ?>
